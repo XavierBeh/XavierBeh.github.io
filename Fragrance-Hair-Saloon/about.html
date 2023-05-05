@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<!-- i am using tailwindcss, which is why there are so many classes -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragrance Hair & Beauty Saloon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/99be811ad4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="min-h-[220vh]">
+    <main>
+      <header class="navbar-fixed absolute top-0 inset-x-0 z-50">
+        <div class="top-information-wrapper">
+          <div
+            class="information-bar hidden lg:flex bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] justify-between px-default py-4 text-black-text text-sm tracking-widest font-medium"
+          >
+            <div
+              class="time-location-info flex gap-x-6 divide-x-2 divide-black-text/60"
+            >
+              <div class="time flex gap-x-2">
+                <img
+                  src="./images/all pages/time-icon.svg"
+                  alt="operating hours"
+                />
+                <p>
+                  <span
+                    class="uppercase tracking-widest text-sm text-black-text"
+                    >NOW: 8AM - 8PM</span
+                  >
+                </p>
+              </div>
+              <div class="location flex gap-x-2 pl-6">
+                <img
+                  src="./images/all pages/location-icon.svg"
+                  alt="location"
+                />
+                <p>
+                  <span
+                    class="uppercase tracking-widest text-sm text-black-text"
+                    >Bandar Mahkota Cheras</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="whatsapp-number-info">
+              <a
+                class="text-black-text flex gap-x-1"
+                href="https://wa.link/amcu1d"
+                target="_blank"
+              >
+                <img
+                  src="./images/all pages/whatsapp-arrow-icon.svg"
+                  alt="whatsapp contact"
+                />
+                <p>
+                  <span
+                    class="inline-block tracking-widest relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                    >011-1639 1393</span
+                  >
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Menu that fix-->
+        <nav
+          class="navbar-true-fixed top-0 z-50 inset-x-0 overflow-y-scroll xs2:overflow-hidden max-h-screen xs2:max-h-none"
+        >
+          <div
+            class="top-nav-bar nav-bg-gradient-low-opacity backdrop-blur-[9px] border-light-beige/60 border-b-[1px] px-4 sm:px-8 lg:px-default py-6 relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:transition after:bg-black/50 after:!bg-black/0 lg:after:bg-black/0"
+          >
+            <div class="flex justify-between">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                <a href="./index.html" class="text-light-beige"
+                  ><img
+                    src="./images/all pages/salon-logo.svg"
+                    alt="logo"
+                    class="w-32"
+                /></a>
+              </div>
+
+              <!-- tablet/responsive navigation -->
+              <div class="tablet-navigation flex gap-x-8 items-center">
+                <!-- Call-to-Action Button Mobile -->
+                <a
+                  href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                  class="uppercase hidden xs:inline-block lg:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                  target="_blank"
+                  >Book Now</a
+                >
+                <!-- Hamburger Button (for mobile devices) -->
+                <div class="flex lg:hidden">
+                  <button
+                    id="menu-toggle"
+                    class="text-light-beige hover:text-gray-400 focus:outline-none"
+                  >
+                    <img
+                      class="w-10 open-icon"
+                      src="./images/all pages/hamburger-menu-icon.svg"
+                      alt="menu button"
+                    />
+                    <img
+                      class="w-10 hidden close-icon"
+                      src="./images/all pages/close-icon.svg"
+                      alt="close button"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Navigation Links - Desktop Version -->
+              <div
+                class="hidden lg:flex sm:items-center text-lg tracking-wider text-light-beige/90"
+              >
+                <ul class="flex gap-x-8 xl:gap-x-12">
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./about.html"
+                      class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./gallery.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./services.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./contact.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Call-to-Action Button Desktop -->
+                <a
+                  href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                  class="uppercase hidden sm:inline-block order-2 lg:order-3 font-bold bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                  target="_blank"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Links - Mobile Menu (hidden by default) -->
+          <div
+            id="mobile-menu"
+            class="bg-black/50 hidden lg:hidden h-screen relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:backdrop-blur-[9px] after:nav-bg-gradient overflow-y-scroll inset-x-0"
+          >
+            <div
+              class="information-bar bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] py-4 text-black-text text-base tracking-wide font-medium"
+            >
+              <div
+                class="content-wrapper px-4 sm:px-8 lg:px-default flex flex-col sm:flex-row gap-y-3 gap-x-4 flex-wrap justify-between lg:flex"
+              >
+                <div class="time flex gap-x-2">
+                  <img
+                    src="./images/all pages/time-icon.svg"
+                    alt="operating hours"
+                  />
+                  <p>
+                    <span class="uppercase tracking-wide text-black-text"
+                      >NOW: 8AM - 8PM</span
+                    >
+                  </p>
+                </div>
+                <div class="location flex gap-x-2">
+                  <img
+                    src="./images/all pages/location-icon.svg"
+                    alt="location"
+                  />
+                  <p>
+                    <span class="uppercase tracking-wide text-black-text"
+                      >Bandar Mahkota Cheras</span
+                    >
+                  </p>
+                </div>
+                <div class="whatsapp-number-info">
+                  <a
+                    class="text-black-text flex gap-x-1"
+                    href="https://wa.link/amcu1d"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/all pages/whatsapp-arrow-icon.svg"
+                      alt="whatsapp contact"
+                    />
+                    <p>
+                      <span
+                        class="inline-block tracking-wide relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                        >011-1639 1393</span
+                      >
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <ul
+              class="px-4 sm:px-8 lg:px-default py-6 gap-y-4 flex flex-col text-3xl xs:text-4xl tracking-wider divide-y-2 divide-light-beige/20"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-light-beige hover:text-[#f1d49d] inline-block text-body-shadow-image-bg w-full"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="active-page transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./gallery.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >Services</a
+                >
+              </li>
+              <li class="border-t-2 !border-b-2 border-light-beige/20">
+                <a
+                  href="./contact.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 pb-6 text-body-shadow-image-bg w-full"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Call-to-Action Button Mobile -->
+            <div class="button-link px-4">
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase inline-block xs:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-4 py-3.5 transition hover:bg-[#f1d49d] w-full text-center"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Navigation Menu that moves -->
+      <nav
+        class="navbar navbar-true-fixed fixed top-0 z-50 inset-x-0 overflow-y-scroll xs2:overflow-hidden max-h-screen xs2:max-h-none hidden"
+      >
+        <div
+          class="top-nav-bar nav-bg-gradient backdrop-blur-sm border-light-beige/60 border-b-2 px-4 sm:px-8 lg:px-default py-6 relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:transition after:bg-black/60 after:!bg-black/0 lg:after:bg-black/0"
+        >
+          <div class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="./index.html" class="text-light-beige"
+                ><img
+                  src="./images/all pages/salon-logo.svg"
+                  alt="logo"
+                  class="w-32"
+              /></a>
+            </div>
+
+            <!-- tablet/responsive navigation -->
+            <div class="tablet-navigation flex gap-x-8 items-center">
+              <!-- Call-to-Action Button Mobile -->
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase hidden xs:inline-block lg:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                target="_blank"
+                >Book Now</a
+              >
+              <!-- Hamburger Button (for mobile devices) -->
+              <div class="flex lg:hidden">
+                <button
+                  id="menu-toggle"
+                  class="text-light-beige hover:text-gray-400 focus:outline-none"
+                >
+                  <img
+                    class="w-10 open-icon"
+                    src="./images/all pages/hamburger-menu-icon.svg"
+                    alt="menu button"
+                  />
+                  <img
+                    class="w-10 hidden close-icon"
+                    src="./images/all pages/close-icon.svg"
+                    alt="close button"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <!-- Navigation Links - Desktop Version -->
+            <div
+              class="hidden lg:flex sm:items-center text-lg tracking-wider text-light-beige/90"
+            >
+              <ul class="flex gap-x-8 xl:gap-x-12">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./gallery.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./services.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Call-to-Action Button Desktop -->
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase hidden sm:inline-block order-2 lg:order-3 font-bold bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Links - Mobile Menu (hidden by default) -->
+        <div
+          id="mobile-menu"
+          class="bg-black/60 hidden lg:hidden h-screen relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:backdrop-blur-[9px] after:nav-bg-gradient overflow-y-scroll inset-x-0"
+        >
+          <div
+            class="information-bar bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] py-4 text-black-text text-base tracking-wide font-medium"
+          >
+            <div
+              class="content-wrapper px-4 sm:px-8 lg:px-default flex flex-col sm:flex-row gap-y-3 gap-x-4 flex-wrap justify-between lg:flex"
+            >
+              <div class="time flex gap-x-2">
+                <img
+                  src="./images/all pages/time-icon.svg"
+                  alt="operating hours"
+                />
+                <p>
+                  <span class="uppercase tracking-wide text-black-text"
+                    >NOW: 8AM - 8PM</span
+                  >
+                </p>
+              </div>
+              <div class="location flex gap-x-2">
+                <img
+                  src="./images/all pages/location-icon.svg"
+                  alt="location"
+                />
+                <p>
+                  <span class="uppercase tracking-wide text-black-text"
+                    >Bandar Mahkota Cheras</span
+                  >
+                </p>
+              </div>
+              <div class="whatsapp-number-info">
+                <a
+                  class="text-black-text flex gap-x-1"
+                  href="https://wa.link/amcu1d"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/all pages/whatsapp-arrow-icon.svg"
+                    alt="whatsapp contact"
+                  />
+                  <p>
+                    <span
+                      class="inline-block tracking-wide relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                      >011-1639 1393</span
+                    >
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="px-4 sm:px-8 lg:px-default py-6 gap-y-4 flex flex-col text-3xl xs:text-4xl tracking-wider divide-y-2 divide-light-beige/20"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-light-beige hover:text-[#f1d49d] inline-block text-body-shadow-image-bg w-full"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="active-page transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./gallery.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >Services</a
+              >
+            </li>
+            <li class="border-t-2 !border-b-2 border-light-beige/20">
+              <a
+                href="./contact.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 pb-6 text-body-shadow-image-bg w-full"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Call-to-Action Button Mobile -->
+          <div class="button-link px-4">
+            <a
+              href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+              class="uppercase inline-block xs:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-4 py-3.5 transition hover:bg-[#f1d49d] w-full text-center"
+              target="_blank"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- hero -->
+      <section
+        class="hero bg-cover bg-[55%] h-screen flex flex-col justify-center relative after:black-filter-pseudo"
+        style="
+          background-image: url('./images/about\ page/about-hero-picture.jpg');
+        "
+      >
+        <div
+          class="relative z-10 pd-responsive flex flex-col gap-y-2 xs:gap-y-4 translate-y-20"
+        >
+          <h5
+            class="text-light-beige text-base text-body-shadow-image-bg after:shadow-sm mt-12 uppercase"
+          >
+            About
+          </h5>
+          <h1 class="text-light-beige mt-6 mb-4 text-header-shadow-image-bg">
+            <span>A SALON</span> Born Out Of <br />
+            Ambition And Passion
+          </h1>
+        </div>
+      </section>
+      <!-- infinite marquee -->
+      <section class="marquee-social-proof">
+        <div
+          class="marquee py-6 bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] border-black-text border-y-[1px] relative before:marquee-gradient-shine-left after:marquee-gradient-shine-right"
+        >
+          <ul class="marquee__content">
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+          </ul>
+          <!-- Mirrors the content above -->
+          <ul class="marquee__content" aria-hidden="true">
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- shiseido-explain-section -->
+      <section
+        class="Shiseido-explanation relative text-black-text mt-20 sm:mt-28 pd-responsive"
+      >
+        <!-- parent-container for grid -->
+        <div
+          class="content-wrapper grid gap-x-6 md:gap-x-10 grid-cols-1 lg:grid-cols-2"
+        >
+          <!-- img-wrapper -->
+          <div class="img-wrapper">
+            <img
+              class="lg:min-w-[500px] object-cover max-h-[450px] lg:max-h-[550px] w-full"
+              src="./images/about page/Shiseido-certificate.jpg"
+              alt="Shiseido certificate"
+            />
+          </div>
+          <!-- text-document-group -->
+          <div class="text-content relative z-10">
+            <h5
+              class="text-base after:shadow-sm after:!border-black-text uppercase mt-12 lg:mt-0"
+            >
+              OUR acknowledgement
+            </h5>
+            <h2 class="mt-8 mb-4">
+              <span>Trusted</span> By <br />
+              Shiseido Professional
+            </h2>
+            <p class="mb-8">
+              This certificate guarantees that all Shiseido Professional
+              products retailed and used by our authorized salon are auhentic
+              and safe to use. All Shiseido Professional products undergo
+              stringent protocols of quality control and delivery to our
+              official authorized salons. These protocols are to ensure that
+              each Shiseido Professional product has been tested and approved
+              for safety and quality.
+              <br /><br />
+              Shiseido Malaysia Sdn Bhd does not endorse or take any liability
+              on any hair products from unauthorized salons, distributors or any
+              parallel importers as they are from unknown sources and it could
+              be counterfeit, diluted, contaminated or expired products.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="border-separation h-px w-full bg-black-text/70 my-20"
+          ></div>
+        </div>
+      </section>
+      <!-- our story section -->
+      <section
+        class="our-story relative text-black-text mt-20 sm:mt-28 pd-responsive"
+      >
+        <h5
+          class="text-base after:shadow-sm after:!border-black-text mb-12 uppercase"
+        >
+          OUR story
+        </h5>
+        <div class="img-wrapper">
+          <img
+            class="object-cover object-[25%_35%] max-h-[550px] min-h-[300px] w-full"
+            src="./images/about page/our-story.jpg"
+            alt="our story"
+          />
+        </div>
+        <!-- parent-container for grid -->
+        <div class="content-wrapper">
+          <!-- text-document-group -->
+          <div
+            class="text-content relative z-10 grid gap-x-6 md:gap-x-10 grid-cols-1 lg:grid-cols-2 mt-12"
+          >
+            <h2 class="mb-4">Ambition Born Out Of <span>Hardship</span></h2>
+            <p class="">
+              Fragrance Hair Saloon launched at 2013, founded by Ray Ho and his
+              wife, Yumi. where both of them run the business together. For the
+              sake of improving his parents’ life, Ray Ho decided to acquire
+              hair cut skills and launched his own salon, entering the field of
+              entrepreneurship.
+              <br /><br />
+              The name Fragrance originated from the most popular colour in
+              hairdressing trends in 2013-purple. At that time, in many Beauty
+              Fields competitions, purple works accounted for two-thirds.
+              Therefore, the founder and his wife decided to use Fragrance as
+              the name of the store, and the decoration of the store was also
+              set with a lavender theme. This is because lavender is also
+              predominantly purple. So far, customers also call us "Purple Hair
+              Salon". But now we are in the process of transitioning our
+              branding where we decided to change our brand colours to gold.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-separation h-px w-full bg-black-text/70 mt-16 mb-6 lg:mt-20 lg:mb-20"
+        ></div>
+        <div class="summary-wrapper">
+          <!-- content-wrapper to use grid on-->
+          <div
+            class="content-wrapper grid gap-y-8 gap-x-6 md:gap-x-20 grid-cols-1 lg:grid-cols-3 gap-4"
+          >
+            <!-- point-component -->
+            <div class="point-wrapper mt-8 lg:mt-0">
+              <div
+                class="line w-full border border-black-text/50 mb-16 hidden"
+              ></div>
+              <div
+                class="benefit-content-wrapper flex flex-col gap-y-4 items-start"
+              >
+                <h2 class="">6</h2>
+                <h5 class="after:!border-black-text">LEADING EXPERTS</h5>
+                <p>
+                  Our team includes 6 leading hair experts who are dedicated to
+                  help you achieve your dream look.
+                </p>
+              </div>
+            </div>
+            <!-- point-component -->
+            <div class="point-wrapper mt-8 lg:mt-0">
+              <div
+                class="line w-full border border-black-text/50 mb-16 lg:hidden"
+              ></div>
+              <div
+                class="benefit-content-wrapper flex flex-col gap-y-4 items-start"
+              >
+                <h2 class="">10</h2>
+                <h5 class="after:!border-black-text">YEARS OF EXPERIENCE</h5>
+                <p>
+                  With over 10 years of experience in the industry, we have the
+                  knowledge and expertise to help you achieve your hair goals.
+                  Trust us to bring your vision to life.
+                </p>
+              </div>
+            </div>
+            <!-- point-component -->
+            <div class="point-wrapper mt-8 lg:mt-0">
+              <div
+                class="line w-full border border-black-text/50 mb-16 lg:hidden"
+              ></div>
+              <div
+                class="benefit-content-wrapper flex flex-col gap-y-4 items-start"
+              >
+                <h2 class="">Cheras</h2>
+                <h5 class="after:!border-black-text">LOCATION</h5>
+                <p>
+                  Discover our salon in the heart of Bandar Mahkota Cheras - a
+                  vibrant town that perfectly complements our warm and welcoming
+                  atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our mission and vision -->
+      <section class="mission-vision pd-responsive">
+        <div class="border-separation h-px w-full bg-black-text/70 my-20"></div>
+        <h5
+          class="text-base after:shadow-sm after:!border-black-text mt-12 uppercase"
+        >
+          OUR Mission & Vision
+        </h5>
+        <div class="content-wrapper mt-8 grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="mission-wrapper text-light-beige border border-black-text lg:p-8 p-7 bg-gradient-to-r from-[#423B34] to-[#0D0C0B] flex flex-col gap-y-4 md:min-h-[350px]"
+          >
+            <h2>Mission</h2>
+            <p>
+              Our Mission is to provide every customer with world class services
+              and attention in a warm, intimate, and invigorating environment.
+            </p>
+          </div>
+          <div
+            class="vision-wrapper border border-black-text lg:p-8 p-7 bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] flex flex-col gap-y-4 md:min-h-[350px]"
+          >
+            <h2>Vision</h2>
+            <p>
+              Our Vision is to lead the trend in hair and beauty fields by
+              making the customer experience exceptional and unique which is
+              what the customers are craving for.
+            </p>
+          </div>
+        </div>
+        <div class="border-separation h-px w-full bg-black-text/70 my-20"></div>
+      </section>
+
+      <!-- member section -->
+      <section class="member pd-responsive">
+        <div class="text-container mb-8">
+          <h5
+            class="text-base after:shadow-sm after:!border-black-text mt-12 uppercase"
+          >
+            OUR Team
+          </h5>
+          <h2 class="mt-8 mb-4">Fragrance <span> Members</span></h2>
+        </div>
+        <!-- use grid on -->
+        <div
+          class="content-wrapper-member grid gap-y-8 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-20 grid-cols-1 xs:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Founder-Ray Ho.jpg"
+              alt="Founder"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Ray Ho</h4>
+              <p class="uppercase">FOUNDER</p>
+            </div>
+          </div>
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Director-Susu.jpg"
+              alt="director"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Susu</h4>
+              <p class="uppercase">DIRECTOR</p>
+            </div>
+          </div>
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Receptionist-Vivien.jpg"
+              alt="receptionist"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Vivien</h4>
+              <p class="uppercase">RECEPTIONIST</p>
+            </div>
+          </div>
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Senior-Hairstylist- Rex.jpg"
+              alt="stylist"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Rex</h4>
+              <p class="uppercase">Senior Hairstylist</p>
+            </div>
+          </div>
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Professional-Hairstylist-Gabby.jpg"
+              alt="stylist"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Gabby</h4>
+              <p class="uppercase">FProfessional Hairstylist</p>
+            </div>
+          </div>
+          <!-- member component -->
+          <div class="member-wrapper flex flex-col gap-y-6">
+            <img
+              src="./images/about page/member/Professional-Hairstylist-Ben 1.jpg"
+              alt="stylist"
+            />
+            <div class="text-wrapper grid gap-y-1">
+              <h4 class="font-serif text-2xl">Ben</h4>
+              <p class="uppercase">Professional Hairstylist</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-separation h-px w-full bg-black-text/70 my-20"></div>
+      </section>
+
+      <!-- achievement section -->
+      <section class="achivements-showcase pd-responsive mb-28 lg:mb-40">
+        <!-- text-document-group -->
+        <div
+          class="text-content relative z-10 pd-responsive text-center flex flex-col justify-center items-center mb-4 md:mb-12"
+        >
+          <h5
+            class="text-base after:shadow-sm after:!border-black-text mt-8 uppercase after:!left-1/2 after:-translate-x-1/2"
+          >
+            Our certificates
+          </h5>
+          <h2 class="mt-8 mb-4">
+            Our Proud <br />
+            <span>Achievements</span>
+          </h2>
+          <p class="mb-8 max-w-[440px]">
+            This is a list of certificates that is achieved with our hardworks,
+            and we are proud to show it off.
+          </p>
+        </div>
+        <div
+          class="img-wrapper grid grid-cols-2 md:grid-cols-4 gap-x-6 md:gap-x-8 lg:gap-x-20 gap-y-6 xl:gap-x-32"
+        >
+          <img
+            class="w-full"
+            src="./images/about page/achivement/certificate-01.jpg"
+            alt="certificate"
+          />
+          <img
+            class="w-full"
+            src="./images/about page/achivement/certificate-02.jpg"
+            alt="certificate"
+          />
+          <img
+            class="w-full"
+            src="./images/about page/achivement/certificate-03.jpg"
+            alt="certificate"
+          />
+          <img
+            class="w-full"
+            src="./images/about page/achivement/certificate-04.jpg"
+            alt="certificate"
+          />
+        </div>
+      </section>
+
+      <!-- call-to-action-section -->
+      <section
+        class="benefits pd-responsive relative text-light-beige text-body-shadow-image-bg mt-16 md:mt-24"
+      >
+        <div
+          class="content-wrapper relative bg-cover min-h-[75vh] bg-[65%_0%] grid place-content-center after:black-filter-pseudo after:!bg-opacity-30 after:pd-responsive bg-fixed"
+          style="
+            background-image: url('./images/all\ pages/call-to-action-bg.jpg');
+          "
+        >
+          <!-- text-document-group -->
+          <div
+            class="text-content relative z-10 text-center grid gap-y-6 pd-responsive py-10"
+          >
+            <h5
+              class="text-base after:shadow-sm mt-12 uppercase after:!left-1/2 after:-translate-x-1/2"
+            >
+              BOOK APPOINTMENT
+            </h5>
+            <h2 class="mt-8 mb-4 text-header-shadow-image-bg">
+              Let Us Work <br />
+              With <span> You</span>
+            </h2>
+            <div
+              class="information-wrapper flex flex-wrap justify-center items-center gap-x-4"
+            >
+              <p>Tel: 03-9011 1393</p>
+              <p class="break-all">Email: fragrancehairsaloon@gmail.com</p>
+            </div>
+            <div class="button-link mt-6">
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="inline-block bg-light-beige/0 text-light-beige border-light-beige border font-medium py-4 px-8 transition tracking-widest hover:bg-light-beige/100 hover:text-black-text uppercase"
+                target="_blank"
+              >
+                BOOK NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-separation h-px w-full bg-black-text/70 my-20"></div>
+      </section>
+
+      <!-- instagram section -->
+      <section class="instagram mb-20">
+        <div class="text-content pd-responsive mb-12 flex items-start">
+          <a
+            href="https://www.instagram.com/fragrancehairsaloon/"
+            target="_blank"
+            class="text-lg sm:text-xl relative after:bg-light-beige after:absolute after:border-b after:w-full after:-bottom-1 after:left-0 after:border-black-text font-medium"
+          >
+            Follow us @fragrancehairsaloon
+            <span
+              ><img
+                class="inline-block ml-1 -translate-y-1"
+                src="./images/all pages/instagram-arrow-icon.svg"
+                alt="instagram icon"
+            /></span>
+          </a>
+        </div>
+        <div class="instagram-wrapper pd-responsive">
+          <!-- content-wrapper to use grid on two wrapper(that house 2 services each) -->
+          <div
+            class="content-wrapper grid md:gap-y-8 gap-y-6 gap-x-6 md:gap-x-8 grid-cols-2 lg:grid-cols-4 lg:gap-x-14"
+          >
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-1.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-2.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-3.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-4.jpg"
+              alt="instagram picture"
+            />
+          </div>
+        </div>
+        <!-- end section -->
+      </section>
+      <!-- main -->
+    </main>
+    <footer>
+      <!-- footer-content-wrapper -->
+      <div
+        class="footer-content-wrapper bg-[#0D0C0B] text-light-beige pd-responsive"
+      >
+        <!-- top wrapper -->
+        <div
+          class="top-wrapper flex justify-center items-center flex-col py-12 gap-y-4"
+        >
+          <img
+            class="w-56"
+            src="./images/all pages/salon-logo.svg"
+            alt="Fragrance salon logo"
+          />
+          <p
+            class="uppercase bg-black border border-white/20 px-3 py-2 !tracking-[0.2em] sm:!tracking-[0.3em] text-center"
+          >
+            Trusted By Shiseido Professional
+          </p>
+        </div>
+        <!-- white line -->
+        <div class="w-full h-px bg-white/60"></div>
+        <!-- white line -->
+
+        <div class="middle-wrapper-content justify-center pb-14">
+          <!-- top-first-wrapper -->
+          <div
+            class="first-wrapper grid grid-cols-1 lg:grid-cols-[repeat(3,auto)] gap-x-6 gap-y-4 justify-center lg:justify-around"
+          >
+            <!-- info-wrapper 1 - Address, hours-->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Address
+                </h5>
+                <p
+                  class="max-w-[450px] lg:max-w-[220px] text-center lg:text-left"
+                >
+                  13 Jalan Temenggung 25/9, Bandar Mahkota Cheras, 43200 Cheras,
+                  Selangor Bandar Mahkota Cheras, Batu 9, 43200 Cheras, Selangor
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  HOURS
+                </h5>
+                <p class="text-center lg:text-left">
+                  Mon - Sat: 11am - 7:30pm <br />
+                  Sun: 11am - 6:30pm
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+            </div>
+
+            <!-- info-wrapper 2 - Booking and contact-->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Booking and Contact
+                </h5>
+                <p class="text-center lg:text-left">
+                  To make a booking online, please<br />
+                  <a
+                    target="_blank"
+                    class="underline text-[#FFEBBF]"
+                    href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                    >click here</a
+                  >
+                  .
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/20"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <p class="text-center lg:text-left">
+                  Or you can call or email Us.
+                </p>
+                <p class="text-center lg:text-left">
+                  - Tel: 03-9011 1393 <br />
+                  - Email <br />
+                  fragrancehairsaloon@gmail.com
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/20"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <p class="text-center lg:text-left">Or you can message us.</p>
+                <a
+                  class="flex gap-x-1 justify-self-center lg:justify-self-start"
+                  href="https://wa.link/amcu1d"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/all pages/whatsapp-white-icon.svg"
+                    alt="whatsapp contact"
+                  />
+                  <p>
+                    <span
+                      class="inline-block tracking-widest relative after:absolute after:w-full after:inset-0 after:border-b after:text-light-beige"
+                      >011-1639 1393</span
+                    >
+                  </p>
+                </a>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+            </div>
+
+            <!-- info-wrapper 3 - links & follow us -->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Links
+                </h5>
+                <!-- <p class="w-[220px]"> </p> -->
+                <nav>
+                  <ul
+                    class="grid gap-y-4 justify-center lg:justify-start text-center lg:text-left"
+                  >
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./about.html"
+                        class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./gallery.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./services.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./contact.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Follow US
+                </h5>
+                <div
+                  class="social-media-wrapper flex items-center gap-x-4 justify-center lg:justify-start"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/fragrancehairsaloon/"
+                  >
+                    <img
+                      src="./images/all pages/instagram-icon.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/FRAGRANCEHAIRSALOON/"
+                  >
+                    <img
+                      src="./images/all pages/facebook-icon.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second-wrapper -->
+          <div class="second-wrapper"></div>
+        </div>
+
+        <!-- white line -->
+        <div class="w-full h-px bg-white/60"></div>
+        <!-- white line -->
+
+        <!-- bottom-wrapper - copyright text -->
+        <div
+          class="bottom-wrapper flex flex-col lg:flex-row justify-between flex-grow gap-x-6 gap-y-4 flex-wrap py-6 lg:justify-between text-center divide-y lg:divide-y-0 divide-white/10"
+        >
+          <p>All rights reserved - © Fragrance Hair & Beauty Saloon</p>
+          <p class="pt-6 lg:pt-0">Designed & Built By Beh Le Yan</p>
+        </div>
+        <!-- end -->
+      </div>
+      <!-- end -->
+    </footer>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
