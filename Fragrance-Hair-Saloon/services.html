@@ -1,0 +1,2847 @@
+<!DOCTYPE html>
+<!-- i am using tailwindcss, which is why there are so many classes -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragrance Hair & Beauty Saloon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/99be811ad4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="min-h-[220vh]">
+    <main>
+      <header class="navbar-fixed absolute top-0 inset-x-0 z-50">
+        <div class="top-information-wrapper">
+          <div
+            class="information-bar hidden lg:flex bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] justify-between px-default py-4 text-black-text text-sm tracking-widest font-medium"
+          >
+            <div
+              class="time-location-info flex gap-x-6 divide-x-2 divide-black-text/60"
+            >
+              <div class="time flex gap-x-2">
+                <img
+                  src="./images/all pages/time-icon.svg"
+                  alt="operating hours"
+                />
+                <p>
+                  <span
+                    class="uppercase tracking-widest text-sm text-black-text"
+                    >NOW: 8AM - 8PM</span
+                  >
+                </p>
+              </div>
+              <div class="location flex gap-x-2 pl-6">
+                <img
+                  src="./images/all pages/location-icon.svg"
+                  alt="location"
+                />
+                <p>
+                  <span
+                    class="uppercase tracking-widest text-sm text-black-text"
+                    >Bandar Mahkota Cheras</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="whatsapp-number-info">
+              <a
+                class="text-black-text flex gap-x-1"
+                href="https://wa.link/amcu1d"
+                target="_blank"
+              >
+                <img
+                  src="./images/all pages/whatsapp-arrow-icon.svg"
+                  alt="whatsapp contact"
+                />
+                <p>
+                  <span
+                    class="inline-block tracking-widest relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                    >011-1639 1393</span
+                  >
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Menu that fix-->
+        <nav
+          class="navbar-true-fixed top-0 z-50 inset-x-0 overflow-y-scroll xs2:overflow-hidden max-h-screen xs2:max-h-none"
+        >
+          <div
+            class="top-nav-bar nav-bg-gradient-low-opacity backdrop-blur-[9px] border-light-beige/60 border-b-[1px] px-4 sm:px-8 lg:px-default py-6 relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:transition after:bg-black/50 after:!bg-black/0 lg:after:bg-black/0"
+          >
+            <div class="flex justify-between">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                <a href="./index.html" class="text-light-beige"
+                  ><img
+                    src="./images/all pages/salon-logo.svg"
+                    alt="logo"
+                    class="w-32"
+                /></a>
+              </div>
+
+              <!-- tablet/responsive navigation -->
+              <div class="tablet-navigation flex gap-x-8 items-center">
+                <!-- Call-to-Action Button Mobile -->
+                <a
+                  href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                  class="uppercase hidden xs:inline-block lg:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                  target="_blank"
+                  >Book Now</a
+                >
+                <!-- Hamburger Button (for mobile devices) -->
+                <div class="flex lg:hidden">
+                  <button
+                    id="menu-toggle"
+                    class="text-light-beige hover:text-gray-400 focus:outline-none"
+                  >
+                    <img
+                      class="w-10 open-icon"
+                      src="./images/all pages/hamburger-menu-icon.svg"
+                      alt="menu button"
+                    />
+                    <img
+                      class="w-10 hidden close-icon"
+                      src="./images/all pages/close-icon.svg"
+                      alt="close button"
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Navigation Links - Desktop Version -->
+              <div
+                class="hidden lg:flex sm:items-center text-lg tracking-wider text-light-beige/90"
+              >
+                <ul class="flex gap-x-8 xl:gap-x-12">
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./about.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./gallery.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./services.html"
+                      class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./contact.html"
+                      class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Call-to-Action Button Desktop -->
+                <a
+                  href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                  class="uppercase hidden sm:inline-block order-2 lg:order-3 font-bold bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                  target="_blank"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Links - Mobile Menu (hidden by default) -->
+          <div
+            id="mobile-menu"
+            class="bg-black/50 hidden lg:hidden h-screen relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:backdrop-blur-[9px] after:nav-bg-gradient overflow-y-scroll inset-x-0"
+          >
+            <div
+              class="information-bar bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] py-4 text-black-text text-base tracking-wide font-medium"
+            >
+              <div
+                class="content-wrapper px-4 sm:px-8 lg:px-default flex flex-col sm:flex-row gap-y-3 gap-x-4 flex-wrap justify-between lg:flex"
+              >
+                <div class="time flex gap-x-2">
+                  <img
+                    src="./images/all pages/time-icon.svg"
+                    alt="operating hours"
+                  />
+                  <p>
+                    <span class="uppercase tracking-wide text-black-text"
+                      >NOW: 8AM - 8PM</span
+                    >
+                  </p>
+                </div>
+                <div class="location flex gap-x-2">
+                  <img
+                    src="./images/all pages/location-icon.svg"
+                    alt="location"
+                  />
+                  <p>
+                    <span class="uppercase tracking-wide text-black-text"
+                      >Bandar Mahkota Cheras</span
+                    >
+                  </p>
+                </div>
+                <div class="whatsapp-number-info">
+                  <a
+                    class="text-black-text flex gap-x-1"
+                    href="https://wa.link/amcu1d"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/all pages/whatsapp-arrow-icon.svg"
+                      alt="whatsapp contact"
+                    />
+                    <p>
+                      <span
+                        class="inline-block tracking-wide relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                        >011-1639 1393</span
+                      >
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <ul
+              class="px-4 sm:px-8 lg:px-default py-6 gap-y-4 flex flex-col text-3xl xs:text-4xl tracking-wider divide-y-2 divide-light-beige/20"
+            >
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-light-beige hover:text-[#f1d49d] inline-block text-body-shadow-image-bg w-full"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./gallery.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="active-page transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                  >Services</a
+                >
+              </li>
+              <li class="border-t-2 !border-b-2 border-light-beige/20">
+                <a
+                  href="./contact.html"
+                  class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 pb-6 text-body-shadow-image-bg w-full"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Call-to-Action Button Mobile -->
+            <div class="button-link px-4">
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase inline-block xs:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-4 py-3.5 transition hover:bg-[#f1d49d] w-full text-center"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Navigation Menu that moves -->
+      <nav
+        class="navbar navbar-true-fixed fixed top-0 z-50 inset-x-0 overflow-y-scroll xs2:overflow-hidden max-h-screen xs2:max-h-none hidden"
+      >
+        <div
+          class="top-nav-bar nav-bg-gradient backdrop-blur-sm border-light-beige/60 border-b-2 px-4 sm:px-8 lg:px-default py-6 relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:transition after:bg-black/60 after:!bg-black/0 lg:after:bg-black/0"
+        >
+          <div class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+              <a href="./index.html" class="text-light-beige"
+                ><img
+                  src="./images/all pages/salon-logo.svg"
+                  alt="logo"
+                  class="w-32"
+              /></a>
+            </div>
+
+            <!-- tablet/responsive navigation -->
+            <div class="tablet-navigation flex gap-x-8 items-center">
+              <!-- Call-to-Action Button Mobile -->
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase hidden xs:inline-block lg:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                target="_blank"
+                >Book Now</a
+              >
+              <!-- Hamburger Button (for mobile devices) -->
+              <div class="flex lg:hidden">
+                <button
+                  id="menu-toggle"
+                  class="text-light-beige hover:text-gray-400 focus:outline-none"
+                >
+                  <img
+                    class="w-10 open-icon"
+                    src="./images/all pages/hamburger-menu-icon.svg"
+                    alt="menu button"
+                  />
+                  <img
+                    class="w-10 hidden close-icon"
+                    src="./images/all pages/close-icon.svg"
+                    alt="close button"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <!-- Navigation Links - Desktop Version -->
+            <div
+              class="hidden lg:flex sm:items-center text-lg tracking-wider text-light-beige/90"
+            >
+              <ul class="flex gap-x-8 xl:gap-x-12">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./gallery.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./services.html"
+                    class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Call-to-Action Button Desktop -->
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="uppercase hidden sm:inline-block order-2 lg:order-3 font-bold bg-light-beige text-black-text tracking-widest px-8 py-3.5 ml-10 transition hover:bg-[#f1d49d]"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Links - Mobile Menu (hidden by default) -->
+        <div
+          id="mobile-menu"
+          class="bg-black/60 hidden lg:hidden h-screen relative after:absolute after:inset-0 after:w-full after:h-full after:-z-10 after:backdrop-blur-[9px] after:nav-bg-gradient overflow-y-scroll inset-x-0"
+        >
+          <div
+            class="information-bar bg-gradient-to-r from-[#e6c096] to-[#F9E7CF] py-4 text-black-text text-base tracking-wide font-medium"
+          >
+            <div
+              class="content-wrapper px-4 sm:px-8 lg:px-default flex flex-col sm:flex-row gap-y-3 gap-x-4 flex-wrap justify-between lg:flex"
+            >
+              <div class="time flex gap-x-2">
+                <img
+                  src="./images/all pages/time-icon.svg"
+                  alt="operating hours"
+                />
+                <p>
+                  <span class="uppercase tracking-wide text-black-text"
+                    >NOW: 8AM - 8PM</span
+                  >
+                </p>
+              </div>
+              <div class="location flex gap-x-2">
+                <img
+                  src="./images/all pages/location-icon.svg"
+                  alt="location"
+                />
+                <p>
+                  <span class="uppercase tracking-wide text-black-text"
+                    >Bandar Mahkota Cheras</span
+                  >
+                </p>
+              </div>
+              <div class="whatsapp-number-info">
+                <a
+                  class="text-black-text flex gap-x-1"
+                  href="https://wa.link/amcu1d"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/all pages/whatsapp-arrow-icon.svg"
+                    alt="whatsapp contact"
+                  />
+                  <p>
+                    <span
+                      class="inline-block tracking-wide relative after:absolute after:w-full after:inset-0 after:border-b after:border-black-text"
+                      >011-1639 1393</span
+                    >
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="px-4 sm:px-8 lg:px-default py-6 gap-y-4 flex flex-col text-3xl xs:text-4xl tracking-wider divide-y-2 divide-light-beige/20"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="text-light-beige hover:text-[#f1d49d] inline-block text-body-shadow-image-bg w-full"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./gallery.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="./services.html"
+                class="active-page transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 text-body-shadow-image-bg w-full"
+                >Services</a
+              >
+            </li>
+            <li class="border-t-2 !border-b-2 border-light-beige/20">
+              <a
+                href="./contact.html"
+                class="transition text-light-beige hover:text-[#f1d49d] inline-block pt-6 pb-6 text-body-shadow-image-bg w-full"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Call-to-Action Button Mobile -->
+          <div class="button-link px-4">
+            <a
+              href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+              class="uppercase inline-block xs:hidden font-bold align-middle bg-light-beige text-black-text tracking-widest px-4 py-3.5 transition hover:bg-[#f1d49d] w-full text-center"
+              target="_blank"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <section
+        class="hero bg-cover bg-[55%] h-screen flex flex-col justify-center relative after:black-filter-pseudo"
+        style="
+          background-image: url('./images/services\ page/services-hero.jpg');
+        "
+      >
+        <div
+          class="relative z-10 pd-responsive flex flex-col gap-y-2 xs:gap-y-4 translate-y-20"
+        >
+          <h5
+            class="text-light-beige text-base text-body-shadow-image-bg after:shadow-sm mt-12 uppercase"
+          >
+            Services
+          </h5>
+          <h1 class="text-light-beige mt-6 mb-4 text-header-shadow-image-bg">
+            Professional And <br />
+            Unmatched <span>Services</span>
+          </h1>
+        </div>
+      </section>
+
+      <!-- infinite marquee -->
+      <section class="marquee-social-proof">
+        <div
+          class="marquee py-6 bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] border-black-text border-y-[1px] relative before:marquee-gradient-shine-left after:marquee-gradient-shine-right"
+        >
+          <ul class="marquee__content">
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+          </ul>
+          <!-- Mirrors the content above -->
+          <ul class="marquee__content" aria-hidden="true">
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/all pages/trusted-by-ShiSeido.svg"
+                alt="truseted by Shisido Professional"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- services information -->
+      <section class="services-information">
+        <div id="styling" class="content-wrapper-whole pd-responsive">
+          <!-- information-component  -->
+          <div
+            class="content-wrapper py-14 grid gap-y-4 gap-x-8 grid-cols-1 sm:grid-cols-2 items-start content-start justify-between"
+          >
+            <div class="description-wrapper">
+              <h2>Styling Services</h2>
+              <p class="sm:max-w-[400px] mt-6">
+                If you are not sure what hair cut you want to go for, no
+                worries, our hair stylist will help you to decide the most
+                suitable hair style for you.
+              </p>
+            </div>
+
+            <!-- service-accordion-group -->
+            <div
+              class="service-wrapper flex flex-col translate-y-2 bg-gradient-to-r from-white to-[#FFF5E5] rounded-lg border border-[#5E5E5E] accordion-group-shadow max-w-[780px] w-full justify-self-end divide-y-[1px] divide-black-text/30"
+            >
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Adult Hair Cut
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h - 1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 38
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 38
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 48
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Kid Cut
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Wash & Blow
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 18
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 18
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Straight
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Forward
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Curl
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 35
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+          <!-- line -->
+          <div class="border-separation h-px w-full bg-black-text/70"></div>
+          <!-- information-component  -->
+          <!-- information-component  -->
+          <div
+            id="hairColour"
+            class="content-wrapper py-14 grid gap-y-4 gap-x-8 grid-cols-1 sm:grid-cols-2 items-start content-start justify-between"
+          >
+            <div class="description-wrapper">
+              <h2>Hair Colour Services</h2>
+              <p class="sm:max-w-[400px] mt-6">
+                We have all kinds of hair colours for you to choose from, from
+                ash brown to blue ombre. If you are not sure what colour to get,
+                you can consult with our hairstylist.
+              </p>
+            </div>
+
+            <!-- service-accordion-group -->
+            <div
+              class="service-wrapper flex flex-col translate-y-2 bg-gradient-to-r from-white to-[#FFF5E5] rounded-lg border border-[#5E5E5E] accordion-group-shadow max-w-[780px] w-full justify-self-end divide-y-[1px] divide-black-text/30"
+            >
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Colour
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h - 2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 38
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 110
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Short Hair
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 178
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Medium Hair
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 240
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Medium Long
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 280
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Long Hair
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 320
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Extra Long
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 350
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+          <!-- line -->
+          <div class="border-separation h-px w-full bg-black-text/70"></div>
+          <!-- information-component  -->
+          <div
+            id="hairCare"
+            class="content-wrapper py-14 grid gap-y-4 gap-x-8 grid-cols-1 sm:grid-cols-2 items-start content-start justify-between"
+          >
+            <div class="description-wrapper">
+              <h2>Hair Care Services</h2>
+              <p class="sm:max-w-[400px] mt-6">
+                Here are a list of hair care services we offered. No worries,
+                our hair care services are approved and trusted by Shiseido
+                Professional, which means you can rest easy that our experts
+                will keep your hair at its best condition.
+              </p>
+            </div>
+
+            <!-- service-accordion-group -->
+            <div
+              class="service-wrapper flex flex-col translate-y-2 bg-gradient-to-r from-white to-[#FFF5E5] rounded-lg border border-[#5E5E5E] accordion-group-shadow max-w-[780px] w-full justify-self-end divide-y-[1px] divide-black-text/30"
+            >
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Rebonding & Relaxing
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h - 2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 38
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 38
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 48
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Treatment (Shiseido)
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 0
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Scalp Treatment (Shiseido)
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 0
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 18
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Straight
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Forward
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Curl
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 35
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Advanced Scalp Treatment (Shiseido)
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 0
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 18
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Straight
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Forward
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Curl
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 35
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Keratin Treatment (1st Trial)
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>3h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 330
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 18
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Straight
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 25
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Forward
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 30
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Blow Curl
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 35
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+          <!-- line -->
+          <div class="border-separation h-px w-full bg-black-text/70"></div>
+          <!-- information-component  -->
+          <div
+            id="directorService"
+            class="content-wrapper py-14 grid gap-y-4 gap-x-8 grid-cols-1 sm:grid-cols-2 items-start content-start justify-between"
+          >
+            <div class="description-wrapper">
+              <h2>Services By Director</h2>
+              <p class="sm:max-w-[400px] mt-6">
+                Services by Director offers the highest level of expertise and
+                personalized attention for your hair needs. Our experienced
+                directors will work with you to create a custom look that
+                complements your unique style and enhances your natural beauty.
+              </p>
+            </div>
+
+            <!-- service-accordion-group -->
+            <div
+              class="service-wrapper flex flex-col translate-y-2 bg-gradient-to-r from-white to-[#FFF5E5] rounded-lg border border-[#5E5E5E] accordion-group-shadow max-w-[780px] w-full justify-self-end divide-y-[1px] divide-black-text/30"
+            >
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Cut by Director
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 70
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 70
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 90
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Colour by Director
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h - 2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 110
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>1h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 110
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 178
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Rebonding by Director
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min - 4h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 199
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 199
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>4h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 240
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- 1 ROW-accordion-item -->
+              <div class="accordion-item">
+                <!-- 1 parent-container-for-first-visible-label -->
+                <div
+                  class="accordion-parent-wrapper flex justify-between items-start gap-x-4 cursor-pointer hover:bg-[#F5EEDF] p-5 rounded-lg"
+                >
+                  <div class="info-wrapper-left">
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Hair Perm by Director
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min - 4h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 218
+                      </div>
+                    </div>
+                  </div>
+                  <!-- icon-arrow-down -->
+                  <div
+                    class="icon-wrapper-right flex justify-center items-center rounded-full bg-white border border-[#393939] p-4"
+                  >
+                    <img
+                      class="arrow_down_icon inline-block transition-transform"
+                      src="./images/services page/arrow-down-icon.svg"
+                      alt="arrow down button"
+                    />
+                  </div>
+                </div>
+                <!-- container for its children-item -->
+                <div
+                  class="child-detail-wrapper px-5 divide-y-[1px] divide-black/25 hidden"
+                >
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Male
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>2h 30min</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 218
+                      </div>
+                    </div>
+                  </div>
+                  <!-- child-item -->
+                  <div
+                    class="child-item p-5 border-t-[1px] border-black-text/70 bg-[#F8F1E6]/50"
+                  >
+                    <p
+                      class="!text-lg text-[#1A1A1A] font-medium tracking-normal mb-1"
+                    >
+                      Female
+                    </p>
+                    <div
+                      class="information-preview-wrapper flex gap-x-4 items-center flex-wrap gap-y-1"
+                    >
+                      <div
+                        class="time-duration-info flex flex-wrap items-center gap-x-2"
+                      >
+                        <img
+                          src="./images/services page/clock-icon.svg"
+                          alt="time duration"
+                        />
+                        <p>4h</p>
+                      </div>
+                      <div
+                        class="circle w-[7px] h-[7px] bg-[#BDBDBD] rounded-full"
+                      ></div>
+                      <div
+                        class="price-label border rounded-md bg-gradient-to-r from-[#EBCEB5] to-[#FFF3EA] px-3 py-1 border-[#393939]"
+                      >
+                        From RM 380
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- child-item -->
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- call-to-action-section -->
+      <section
+        class="benefits pd-responsive relative text-light-beige text-body-shadow-image-bg mt-16 md:mt-24"
+      >
+        <div
+          class="content-wrapper relative bg-cover min-h-[75vh] bg-[65%_0%] grid place-content-center after:black-filter-pseudo after:!bg-opacity-30 after:pd-responsive bg-fixed"
+          style="
+            background-image: url('./images/all\ pages/call-to-action-bg.jpg');
+          "
+        >
+          <!-- text-document-group -->
+          <div
+            class="text-content relative z-10 text-center grid gap-y-6 pd-responsive py-10"
+          >
+            <h5
+              class="text-base after:shadow-sm mt-12 uppercase after:!left-1/2 after:-translate-x-1/2"
+            >
+              BOOK APPOINTMENT
+            </h5>
+            <h2 class="mt-8 mb-4 text-header-shadow-image-bg">
+              Let Us Work <br />
+              With <span> You</span>
+            </h2>
+            <div
+              class="information-wrapper flex flex-wrap justify-center items-center gap-x-4"
+            >
+              <p>Tel: 03-9011 1393</p>
+              <p class="break-all">Email: fragrancehairsaloon@gmail.com</p>
+            </div>
+            <div class="button-link mt-6">
+              <a
+                href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                class="inline-block bg-light-beige/0 text-light-beige border-light-beige border font-medium py-4 px-8 transition tracking-widest hover:bg-light-beige/100 hover:text-black-text uppercase"
+                target="_blank"
+              >
+                BOOK NOW
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-separation h-px w-full bg-black-text/70 my-20"></div>
+      </section>
+
+      <!-- instagram section -->
+      <section class="instagram mb-20">
+        <div class="text-content pd-responsive mb-12 flex items-start">
+          <a
+            href="https://www.instagram.com/fragrancehairsaloon/"
+            target="_blank"
+            class="text-lg sm:text-xl relative after:bg-light-beige after:absolute after:border-b after:w-full after:-bottom-1 after:left-0 after:border-black-text font-medium"
+          >
+            Follow us @fragrancehairsaloon
+            <span
+              ><img
+                class="inline-block ml-1 -translate-y-1"
+                src="./images/all pages/instagram-arrow-icon.svg"
+                alt="instagram icon"
+            /></span>
+          </a>
+        </div>
+        <div class="instagram-wrapper pd-responsive">
+          <!-- content-wrapper to use grid on two wrapper(that house 2 services each) -->
+          <div
+            class="content-wrapper grid md:gap-y-8 gap-y-6 gap-x-6 md:gap-x-8 grid-cols-2 lg:grid-cols-4 lg:gap-x-14"
+          >
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-1.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-2.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-3.jpg"
+              alt="instagram picture"
+            />
+            <img
+              class="w-full"
+              src="./images/all pages/instagram-picture-4.jpg"
+              alt="instagram picture"
+            />
+          </div>
+        </div>
+        <!-- end section -->
+      </section>
+      <!-- main -->
+    </main>
+    <footer>
+      <!-- footer-content-wrapper -->
+      <div
+        class="footer-content-wrapper bg-[#0D0C0B] text-light-beige pd-responsive"
+      >
+        <!-- top wrapper -->
+        <div
+          class="top-wrapper flex justify-center items-center flex-col py-12 gap-y-4"
+        >
+          <img
+            class="w-56"
+            src="./images/all pages/salon-logo.svg"
+            alt="Fragrance salon logo"
+          />
+          <p
+            class="uppercase bg-black border border-white/20 px-3 py-2 !tracking-[0.2em] sm:!tracking-[0.3em] text-center"
+          >
+            Trusted By Shiseido Professional
+          </p>
+        </div>
+        <!-- white line -->
+        <div class="w-full h-px bg-white/60"></div>
+        <!-- white line -->
+
+        <div class="middle-wrapper-content justify-center pb-14">
+          <!-- top-first-wrapper -->
+          <div
+            class="first-wrapper grid grid-cols-1 lg:grid-cols-[repeat(3,auto)] gap-x-6 gap-y-4 justify-center lg:justify-around"
+          >
+            <!-- info-wrapper 1 - Address, hours-->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Address
+                </h5>
+                <p
+                  class="max-w-[450px] lg:max-w-[220px] text-center lg:text-left"
+                >
+                  13 Jalan Temenggung 25/9, Bandar Mahkota Cheras, 43200 Cheras,
+                  Selangor Bandar Mahkota Cheras, Batu 9, 43200 Cheras, Selangor
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  HOURS
+                </h5>
+                <p class="text-center lg:text-left">
+                  Mon - Sat: 11am - 7:30pm <br />
+                  Sun: 11am - 6:30pm
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+            </div>
+
+            <!-- info-wrapper 2 - Booking and contact-->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Booking and Contact
+                </h5>
+                <p class="text-center lg:text-left">
+                  To make a booking online, please<br />
+                  <a
+                    target="_blank"
+                    class="underline text-[#FFEBBF]"
+                    href="https://www.fresha.com/a/fragrance-hair-saloon-cheras-no-13-jalan-temenggung-25-9-bj585d2j/booking"
+                    >click here</a
+                  >
+                  .
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/20"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <p class="text-center lg:text-left">
+                  Or you can call or email Us.
+                </p>
+                <p class="text-center lg:text-left">
+                  - Tel: 03-9011 1393 <br />
+                  - Email <br />
+                  fragrancehairsaloon@gmail.com
+                </p>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/20"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div
+                class="info-item grid gap-y-4 gap-x-4 items-start justify-center lg:justify-start"
+              >
+                <p class="text-center lg:text-left">Or you can message us.</p>
+                <a
+                  class="flex gap-x-1 justify-self-center lg:justify-self-start"
+                  href="https://wa.link/amcu1d"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/all pages/whatsapp-white-icon.svg"
+                    alt="whatsapp contact"
+                  />
+                  <p>
+                    <span
+                      class="inline-block tracking-widest relative after:absolute after:w-full after:inset-0 after:border-b after:text-light-beige"
+                      >011-1639 1393</span
+                    >
+                  </p>
+                </a>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+            </div>
+
+            <!-- info-wrapper 3 - links & follow us -->
+            <div
+              class="info-wrapper relative z-10 grid gap-y-4 gap-x-4 items-start content-start"
+            >
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Links
+                </h5>
+                <!-- <p class="w-[220px]"> </p> -->
+                <nav>
+                  <ul
+                    class="grid gap-y-4 justify-center lg:justify-start text-center lg:text-left"
+                  >
+                    <li>
+                      <a
+                        href="./index.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./about.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./gallery.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./services.html"
+                        class="active-page transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./contact.html"
+                        class="transition hover:text-[#f1d49d] text-body-shadow-image-bg"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- white line -->
+              <div class="w-full h-px bg-white/[0.15] mt-4 lg:hidden"></div>
+              <!-- white line -->
+              <!-- info-item -->
+              <div class="info-item grid gap-y-4 gap-x-4 items-start">
+                <h5
+                  class="text-base after:shadow-sm after:!border-light-beige mt-12 uppercase text-center lg:text-left after:!left-1/2 after:!-translate-x-1/2 lg:after:!left-0 lg:after:!translate-x-0"
+                >
+                  Follow US
+                </h5>
+                <div
+                  class="social-media-wrapper flex items-center gap-x-4 justify-center lg:justify-start"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/fragrancehairsaloon/"
+                  >
+                    <img
+                      src="./images/all pages/instagram-icon.svg"
+                      alt="instagram"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/FRAGRANCEHAIRSALOON/"
+                  >
+                    <img
+                      src="./images/all pages/facebook-icon.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second-wrapper -->
+          <div class="second-wrapper"></div>
+        </div>
+
+        <!-- white line -->
+        <div class="w-full h-px bg-white/60"></div>
+        <!-- white line -->
+
+        <!-- bottom-wrapper - copyright text -->
+        <div
+          class="bottom-wrapper flex flex-col lg:flex-row justify-between flex-grow gap-x-6 gap-y-4 flex-wrap py-6 lg:justify-between text-center divide-y lg:divide-y-0 divide-white/10"
+        >
+          <p>All rights reserved - © Fragrance Hair & Beauty Saloon</p>
+          <p class="pt-6 lg:pt-0">Designed & Built By Beh Le Yan</p>
+        </div>
+        <!-- end -->
+      </div>
+      <!-- end -->
+    </footer>
+    <script src="./javascript/services.js"></script>
+  </body>
+</html>
